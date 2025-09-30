@@ -102,7 +102,7 @@ Such systems are widely used in **banking, e-commerce, and insurance industries*
 
 ## 📷 Dashboard Preview  
 ### Page 1: Customer & Merchant Analysis  
-![Customer & Merchant Analysis](Images/Image11.jpg)  
+![Customer & Merchant Analysis](Images/Image1.jpg)  
 
 ### Page 2: Fraud & Risk Analysis  
 ![Fraud & Risk Analysis](Images/Image2.jpg)  
