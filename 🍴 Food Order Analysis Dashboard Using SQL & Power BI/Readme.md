@@ -2,11 +2,12 @@
 
 ## 📌 Project Overview
 This project analyzes a **Food Ordering dataset** using **Power BI** to provide insights into:
-- Business performance (Orders, Revenue, Ratings)
-- Delivery efficiency (On-time vs Late deliveries, Average delivery time)
+- Business performance (Orders, Revenue, Ratings, Customer Trends)
+- Delivery efficiency (On-time vs Late deliveries, Average preparation & delivery time)
 - Discount impact on revenue and customer behavior
 
-The dashboard is interactive, visually appealing, and designed for **data-driven decision making**.
+The dashboard is **interactive, user-friendly, and designed for decision-making**.  
+It consists of a **Home Page** and **3 Insight Pages**: Business Health, Delivery Performance, and Discount Insights.  
 
 ---
 
@@ -30,64 +31,97 @@ The dataset contains the following columns:
 ## 📊 Dashboard Pages
 
 ### 🏠 **Home Page**
-- Title & Navigation Buttons (Business Health, Delivery, Discount)
-- Today’s Date Card (Dynamic using DAX)
-- Easy navigation for end-users  
+- Title & Navigation Buttons (Business Health, Delivery, Discount)  
+- Dynamic Date Card (using DAX `TODAY()`)  
+- Serves as the **main entry point** to all dashboards  
 
 ![Home Page](Images/Image1.jpg)
 
 ---
 
-### 📈 **Business Health**
-- **KPIs**: Total Orders, Total Revenue, Average Rating, Unique Customers  
-- **Orders by Cuisine** – Popular cuisines by order volume/revenue  
-- **Monthly Revenue Trend** – Revenue growth over time  
-- **Top Customers** – Highest contributing customers  
+### 📈 **Business Health Page**
+**KPIs:**  
+- Total Orders  
+- Total Revenue  
+- Average Rating  
+
+**Visuals:**  
+- Popular Cuisines and Their Performance  
+- Revenue by Cuisine  
+- Top Customers (Highest Revenue Contribution)  
+
+**Filters/Slicers:**  
+- Date  
+- Cuisine Type  
 
 ![Business Health](Images/Image2.jpg)
 
 ---
 
-### 🚚 **Delivery Performance**
-- **KPIs**: Avg Delivery Time, % On-Time Deliveries, Late Deliveries  
-- **Delivery Status Pie Chart** – On-time vs Late  
-- **Avg Delivery Time by Day of Week** – Identify slow days  
-- **Delivery Time Trend** – Month-on-month improvements  
+### 🚚 **Delivery Performance Page**
+**KPIs:**  
+- Avg Delivery Time  
+- % On-Time Delivery  
+- Late Deliveries  
+
+**Visuals:**  
+- Delivery Status Overview (Pie/Donut)  
+- Avg Delivery Time by Restaurant  
+- Weekly Order Trends  
+- Avg Preparation Time by Cuisine Type  
+- Restaurant Ratings Overview  
+
+**Filters/Slicers:**  
+- Delivery Status  
+- Cuisine Type  
+- Days of the Week  
 
 ![Delivery Performance](Images/Image3.jpg)
 
 ---
 
-### 💸 **Discount Insights**
-- **KPIs**: Total Discounts, Net Revenue (after discount), % Orders with Discount  
-- **Discounts by Cuisine** – Discounts distribution  
-- **Discounts vs Revenue Trend** – Impact on sales over time  
-- **Orders With vs Without Discount** – Pie/Donut chart  
+### 💸 **Discount Insights Page**
+**KPIs:**  
+- Total Discounts  
+- Net Revenue (after discounts)  
+- % Orders with Discount  
+
+**Visuals:**  
+- Area Chart: Orders & Revenue Trends Over Time  
+- Bar Chart: % Revenue Lost by Month  
+- Bar Chart: Impact of Discount on Orders  
+- Donut Chart: Orders With vs Without Discount  
+
+**Filters/Slicers:**  
+- Cuisine Type  
+- Duration  
+- Restaurant Name  
 
 ![Discount Insights](Images/Image4.jpg)
 
 ---
 
-## 🛠️ DAX Measures Used
-Some key measures created:
+## 🛠️ Key DAX Measures
+Some measures used in the report:  
 - **Total Revenue** = SUM('food_order'[cost_of_orders])  
 - **Average Rating** = AVERAGE('food_order'[rating])  
+- **Net Revenue** = SUM('food_order'[cost_of_orders]) - SUM('food_order'[discount_applied])  
 - **Orders with Discount** = COUNTROWS(FILTER('food_order', 'food_order'[discount_applied] > 0))  
 - **% On-Time Deliveries** = DIVIDE(CALCULATE(COUNTROWS('food_order'), 'food_order'[delivery_status] = "On-Time"), COUNTROWS('food_order'))  
 
 ---
 
 ## 🚀 Insights & Benefits
-- Identify top cuisines driving revenue  
-- Track operational efficiency in deliveries  
-- Evaluate discount strategies  
-- Enhance customer satisfaction through data insights  
+- 📈 Track overall business health through revenue, orders, and customer ratings  
+- 🚚 Identify operational bottlenecks in delivery and preparation time  
+- 💸 Evaluate how discounts affect revenue and ordering behavior  
+- 🎯 Support better decision-making for promotions, operations, and customer satisfaction  
 
 ---
 
 ## 📌 Tools & Technologies
 - **Power BI** (Data Modeling, DAX, Dashboard Design)  
-- **SQL** (Data insertion, Data cleaning)  
+- **SQL** (Data Insertion, Data cleaning)  
 
 ---
 
