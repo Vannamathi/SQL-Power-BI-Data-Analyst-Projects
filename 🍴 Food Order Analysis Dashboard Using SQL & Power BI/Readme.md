@@ -27,39 +27,44 @@ The dataset contains the following columns:
 
 ---
 
-## 📊 Dashboard Structure
+## 📊 Dashboard Pages
 
-### 🔹 **Home Page**
+### 🏠 **Home Page**
 - Title & Navigation Buttons (Business Health, Delivery, Discount)
 - Today’s Date Card (Dynamic using DAX)
-- Easy navigation for end-users
+- Easy navigation for end-users  
+
+![Home Page](Images/Image1.jpg)
 
 ---
 
-### 🔹 **Page 1: Business Health**
+### 📈 **Business Health**
 - **KPIs**: Total Orders, Total Revenue, Average Rating, Unique Customers  
 - **Orders by Cuisine** – Popular cuisines by order volume/revenue  
 - **Monthly Revenue Trend** – Revenue growth over time  
 - **Top Customers** – Highest contributing customers  
-- **Slicers**: Cuisine Type, Date Range, Customer ID  
+
+![Business Health](Images/Image2.jpg)
 
 ---
 
-### 🔹 **Page 2: Delivery Performance**
+### 🚚 **Delivery Performance**
 - **KPIs**: Avg Delivery Time, % On-Time Deliveries, Late Deliveries  
 - **Delivery Status Pie Chart** – On-time vs Late  
 - **Avg Delivery Time by Day of Week** – Identify slow days  
 - **Delivery Time Trend** – Month-on-month improvements  
-- **Slicers**: Day of Week, Delivery Status, Cuisine Type  
+
+![Delivery Performance](Images/Image3.jpg)
 
 ---
 
-### 🔹 **Page 3: Discount Insights**
+### 💸 **Discount Insights**
 - **KPIs**: Total Discounts, Net Revenue (after discount), % Orders with Discount  
 - **Discounts by Cuisine** – Discounts distribution  
 - **Discounts vs Revenue Trend** – Impact on sales over time  
 - **Orders With vs Without Discount** – Pie/Donut chart  
-- **Slicers**: Cuisine Type, Date Range, Restaurant Name  
+
+![Discount Insights](Images/Image4.jpg)
 
 ---
 
@@ -80,14 +85,9 @@ Some key measures created:
 
 ---
 
-## 📷 Dashboard Preview
-*(Add screenshots of your Power BI dashboard here – Home Page, Business Health, Delivery, Discount)*  
-
----
-
 ## 📌 Tools & Technologies
 - **Power BI** (Data Modeling, DAX, Dashboard Design)  
-- **SQL** (Data insertion, Cleaning)
+- **SQL** (Data insertion, Data cleaning)  
 
 ---
 
@@ -95,6 +95,4 @@ Some key measures created:
 👩‍💻 **Vannamathi B**  
 📧 [vannamathibaskaran@gmail.com](mailto:vannamathibaskaran@gmail.com)  
 
-
 ---
-
