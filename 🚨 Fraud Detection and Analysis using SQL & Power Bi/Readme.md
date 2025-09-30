@@ -101,6 +101,15 @@ Such systems are widely used in **banking, e-commerce, and insurance industries*
 ---
 
 ## 📷 Dashboard Preview  
+### Page 1: Customer & Merchant Analysis  
+![Customer & Merchant Analysis](Images/Image11.jpg)  
 
+### Page 2: Fraud & Risk Analysis  
+![Fraud & Risk Analysis](Images/Image2.jpg)  
 
+### Page 3: High Risk Metrics  
+![High Risk Metrics](Images/Image3.jpg)
+
+### Page 4: Fraud & High Risk Metrics
+![Fraud & High Risk Metrics](Images/Image4.jpg)
 
